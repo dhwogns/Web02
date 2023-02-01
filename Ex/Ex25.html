@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ex25</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans:ital,wght@0,700;1,400&family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <style>
+        /* reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        ul {
+            list-style: none;
+        }
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+        /* #wrap */
+        #wrap {
+            font-size: 15px;
+            color: 2a2a2a;
+            line-height: 1.5em;
+            font-family: 'Noto Sans KR', sans-serif;
+        }
+        /* inner */
+        .inner {
+            width: 1200px;
+            margin: 0 auto;
+        }
+        /* top */
+        .top {
+            padding: 50px 0;
+            text-align: center;
+        }
+        .top h1 {
+            font-size: 80px;
+            line-height: 100px;
+            font-family: 'Balsamiq Sans', cursive;
+        }
+        .top .bar {
+            width: 50px;
+            height: 2px;
+            margin: 20px auto;
+            background-color: orange;
+        }
+        .top .sub_tit {
+            font-size: 33px;
+            line-height: 40px;
+        }
+        .top .sub_info {
+            font-weight: 300;
+            color: #666;
+        }
+        /* content */
+        .content::after{
+            content: "";
+            display: block;
+            clear: both;
+        }
+        .content .left {
+            float: left;
+            width: 26%;
+        }
+        .content .left img {
+            width: 100%;
+        }
+        .content .right {
+            position: relative;
+            float: right;
+            width: 67%;
+        }
+        .content .right .tit{
+            margin-bottom: 20px;
+        }
+        .content .right .concept ul{
+            margin-top: 20px;
+            list-style: disc;
+            list-style-position: inside;
+        }
+        .content .right .lifestyle {
+            margin-top: 90px;
+        }
+        .content .right .lifestyle .green {
+            margin-bottom: 15px;
+        }
+        .content .right .designer {
+            position: absolute;
+            top: 240px;
+            right: 0;
+        }
+        .content .right .designer .name {
+            float: left;
+            margin-right: 10px;
+            text-align: right;
+        }
+        .content .right .designer img {
+            float: right;
+        }
+        /* view */
+        .view {
+            margin: 30px 0 50px 0;
+            padding-top: 30px;
+            border-top: 2px solid #eee;
+        }
+        .view ul::after{
+            content: "";
+            display: block;
+            clear: both;
+        }
+        .view .tit {
+            margin-bottom: 20px;
+        }
+        .view ul li {
+            float: left;
+            width: 30%;
+            margin-right: 5%;
+        }
+        .view ul li:last-child {
+            margin-left: 0;
+        }
+        .view ul li a img {
+            width: 100%;
+        }
+        /* footer */
+        footer {
+            margin-bottom: 20px;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="wrap">
+        <div class="inner">
+            <div class="top">
+                <h1>ORGANIC</h1>
+                <p class="bar"></p>
+                <p class="sub_tit">오가닉</p>
+                <p class="sub_info">러프한 소재와 함께 자여누 속의 공간을 풍부하게 경험할 수 있는 오가닉한 스타일</p>
+            </div>
+            <!-- .top -->
+            <div class="content">
+                <div class="left">
+                    <img src="./img/green_img.gif" alt="그린라이프스타일 도서">
+                </div>
+                <div class="right">
+                    <div class="concept">
+                        <img src="./img/title03_01.gif" alt="컨셉설명">
+                    </div>
+                    <!-- .tit-->
+                    <p class="info">오가닉 스타일은 가족이 편안함을 느끼며 휴식할 수 있도록 감성에 초점을 둔 스타일 입니다. 시간이 지나도 가치를 잃지 않는 공간을 디자인 컨셉으로 하여 자연 소재를 사용하고, 고급스러우면서 감성적인 분위기를 연출합니다. 내추럴과 상반 되는 마감재와의 믹스 앤 매치, 그리고 따뜻하고 유기적인 패턴을 포인트로 주어 자칫 밋밋해 보일 수 있는 공간에 생동감을 주었습니다.</p>
+                    <!-- .info -->
+                    <ul>
+                        <li>자연 친화적 공간 연출</li>
+                        <li>뉴트럴 컬러, 그린 포인트 컬러, 재질의 조호를 통한 내추럴한 분위기 연출</li>
+                        <li>유기적 패턴의 소품과 미려한 곡선의 스칸디나비아 스타일의 가구로 스타일 완성</li>
+                    </ul>
+                    <div class="lifestyle">
+                        <div class="tit">
+                            <img src="./img/title03_02.gif" alt="라이프스타일">
+                        </div>'
+                        <!-- .tit -->
+                        <div class="green">
+                            <img src="./img/title04.gif" alt="그린라이프스타일">
+                        </div>
+                        <!-- .green -->
+                    </div>
+                    <!-- .lifestyle -->
+                    <div class="designer">
+                        <p class="name">책임디자이너ㅗ<br>김미화</p>
+                        <img src="./img/photo.gif" alt="책임디자이너 김미화">
+                    </div>
+                    <!-- .designer -->
+                </div>
+                <!-- .right -->
+            </div>
+            <!-- .content -->
+            <div class="view">
+                <div class="tit">
+                    <img src="./img/title03_03.gif" alt="스타일뷰">
+                </div>
+                <!-- .tit -->
+                <ul>
+                    <li>
+                        <a href="#">
+                            <img src="./img/viewimg1.gif" alt="오가닉">
+                            <div class="text">
+                                <img src="./img/view_tit1.gif" alt="오가닉">
+                            </div>
+                        </a>
+                    </li>
+                    <!-- 키워드 -->
+                    <li>
+                        <a href="#">
+                            <img src="./img/viewimg2.gif" alt="오가닉">
+                            <div class="text">
+                                <img src="./img/view_tit2.gif" alt="오가닉">
+                            </div>
+                        </a>
+                    </li>
+                    <!-- 이미지맵 -->
+                    <li>
+                        <a href="#">
+                            <img src="./img/viewimg3.gif" alt="오가닉">
+                            <div class="text">
+                                <img src="./img/view_tit4.gif" alt="오가닉">
+                            </div>
+                        </a>
+                    </li>
+                    <!-- 마감제 -->
+                </ul>
+            </div>
+            <!-- .view -->
+            <footer>
+                <address>
+                    서울특별시 서초구 사평대로 344(1301-4) (주)케이씨씨 정몽진, 정몽익 사업자 등록번호 214-81-7045
+                    홈씨씨인테리어<br>
+                    1588-9894<br>
+                    본 사이트의 모든 컨텐츠는 저작권법에 보호를 받는 바, 무단 전재, 복사, 베포 등을 금합니다.<br>
+                    COPYRIGHT 2015 HOMECC ALL RIGHTS RESERVED.
+                </address>
+            </footer>
+        </div>
+    </div>
+</body>
+</html>

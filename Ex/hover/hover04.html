@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>hover04</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        ul {
+            list-style: none;
+        }
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+        /* #wrap */
+        ul {
+            display: flex;
+            width: 1200px;
+            margin: 50px auto;
+        }
+        li {
+            position: relative;
+            width: 200px;
+            height: 200px;
+            color: #fff;
+            font-size: 20px;
+            text-align: center;
+            transition: all 0.5s;
+        } 
+        li:nth-child(1) {
+            background-color: rgb(208, 101, 3);
+        }
+        li:nth-child(2) {
+            background-color: rgb(233, 147, 26);
+        }
+        li:nth-child(3) {
+            background-color: rgb(22, 145, 190);
+        }
+        li:nth-child(4) {
+            background-color: rgb(22, 107, 162);
+        }
+        li:nth-child(5) {
+            background-color: rgb(27, 70, 71);
+        }
+        li:nth-child(6) {
+            background-color: rgb(15, 40, 54);
+        }
+        .icon {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 80px;
+            height: 80px;
+            margin: 30px auto;
+            border-radius: 50%;
+            background-color: rgba(255, 255, 255, 0.1);
+            box-shadow: 0 0 100px rgba(255, 255, 255, 0);
+            /* 기본 상태일떄 그림자가 100px의 블러에 흰색 완전 투명상태 */
+            transition: all 0.5s;
+        }
+        .icon > img {
+            width: 50%;
+        }
+        .text{
+            position: absolute;
+            bottom: 30px;
+            width: 100%;
+        }
+        /* hover */
+        li:hover {
+            height: 250px;
+            border-bottom: rgba(0, 0, 0, 0.2);
+        }
+        ul:hover .icon {
+            opacity: 0.5;
+            /* ul 태그에 hover 되었을떄 모든 아이콘들이 투명해진다. */
+        }
+        li:hover .icon {
+            opacity: 1;
+            box-shadow: 0 0 0 rgba(255, 255, 255, 0.3);
+            /* li 태그에 hover 되었을떄 그림자의 블러가 사라지고 0.3의 투명도가 생긴다. */
+        }
+    </style>
+</head>
+<body>
+    <div id="wrap">
+        <ul>
+            <li>
+                <a href="#">
+                    <p class="icon">
+                        <img src="./img/icon_bell.png" alt="new">
+                    </p>
+                    <p class="text">New</p>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <p class="icon">
+                        <img src="./img/icon_camera.png" alt="camera">
+                    </p>
+                    <p class="text">Camera</p>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <p class="icon">
+                        <img src="./img/icon_heart.png" alt="heart">
+                    </p>
+                    <p class="text">Heart</p>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <p class="icon">
+                        <img src="./img/icon_setting.png" alt="setting">
+                    </p>
+                    <p class="text">Setting</p>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <p class="icon">
+                        <img src="./img/icon_share.png" alt="share">
+                    </p>
+                    <p class="text">Share</p>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <p class="icon">
+                        <img src="./img/icon_download.png" alt="download">
+                    </p>
+                    <p class="text">Download</p>
+                </a>
+            </li>
+        </ul>
+    </div>
+</body>
+</html>

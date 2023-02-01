@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="KO">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ex15</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .wrap{
+            position: relative;
+            width: 100%;
+            height: 100vh;
+            background-color: lightpink;
+        }
+        .wrap .bbox{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            margin: -400px 0 0 -400px;
+            width: 800px;
+            height: 800px;
+            background-color: skyblue;
+        }
+        .wrap p{
+            position: absolute;
+            width: 200px;
+            height: 200px;
+            text-align: center;
+            font-size: 50px;
+            font-weight: 700;
+            color: #fff;
+            background-color: blueviolet;
+        }
+        .mbox2{
+            position: absolute;
+            top: 0;
+            left: 50%;
+        }
+        .mbox3{
+            position: absolute;
+            top: 25%;
+            left: 25%;
+        }
+        .mbox4{
+            position: absolute;
+            top: 25%;
+            left: 75%;
+        }
+        .mbox5{
+            position: absolute;
+            top: 50%;
+            left: 0;
+        }
+        .mbox6{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+        }
+        .mbox7{
+            position: absolute;
+            top: 75%;
+            left: 25%;
+        }
+        .mbox8{
+            position: absolute;
+            top: 75%;
+            left: 50%;
+        }
+    </style>
+
+</head>
+<body>
+    <div class = "wrap">
+        <div class = "bbox">
+            <p class = "mbox1">
+                <span class = "sbox1">1.</span>
+                <span class = "sbox2">2.</span>
+                <span class = "sbox3">3.</span>
+                <span class = "sbox4">4.</span>
+                <span class = "sbox5">5.</span>
+                <span class = "sbox6">6.</span>
+                <span class = "sbox7">7.</span>
+                <span class = "sbox8">8.</span>
+            </p>
+            <p class = "mbox2"></p>
+            <p class = "mbox3"></p>
+            <p class = "mbox4"></p>
+            <p class = "mbox5"></p>
+            <p class = "mbox6"></p>
+            <p class = "mbox7"></p>
+            <p class = "mbox8"></p>
+        </div>
+    </div>
+</body>
+</html>
